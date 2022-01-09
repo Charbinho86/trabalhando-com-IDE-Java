@@ -1,5 +1,7 @@
 package trabalhandojava.dio;
 
+import trabalhandojava.dio.gato.Gato;
+
 public class PrimeiroPrograma {
 
 	public static void main(String[] args) {
