@@ -16,13 +16,18 @@ public class Calculadora {
 			int soma = soma(a,b);
 			int subtracao = subtracao(a,b);
 			int multiplicacao = multiplicacao(a,b);
-			float divisao = divisao(a,b);
+			int divisao = divisao(a,b);
+			float divisao1 = divisao1(a,b);
 			
 			System.out.println("Soma = " + a + " + " + b + " = "  + soma);
 			System.out.println("Sub = " +  a  + " - " +  b  + " = " + subtracao);
 			System.out.println("Mult = " + a + " * " + b + " = " + multiplicacao);
-			System.out.println("Div = " + a + " / " + b + " = " + divisao);
+			if(a < b) {
+			System.out.println("Div = " + a + " / " + b + " = " + divisao1);
 		}
+			else {
+				System.out.println("Div = " + a + " / " + b + " = " + divisao);
+			}}
 		
 	}
 
@@ -38,7 +43,11 @@ public class Calculadora {
 		return a * b;
 	}
 	
-	public static float divisao(float a, float b) {
+	public static int divisao(int a, int b) {
+	     return a / b;
+	}
+	
+	public static float divisao1(float a, float b) {
 		return a / b;
 	}
 }
